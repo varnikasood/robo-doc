@@ -643,7 +643,6 @@ def get_bot_response():
         else:
             return "THANKS Mr/Ms " + name + " for using me for more information please contact <b> +21266666666</b>"
 
-
 if __name__ == "__main__":
     import random  # define the random module
     import string
@@ -653,4 +652,4 @@ if __name__ == "__main__":
     ran = ''.join(random.choices(string.ascii_uppercase + string.digits, k=S))
     # chat_sp()
     app.secret_key = str(ran)
-    app.run()
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
