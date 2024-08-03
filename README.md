@@ -1,22 +1,26 @@
 # ROBO-DOC
 Healthcare chatbot to predict Diseases based on patient symptoms.
 <br>
-<p align="center">
-  <img src="screens\prediction.png" width="500" >
+<p>
+  <img src="screens\prediction.png" width="700" >
 </p>
 
-# How to use:
-## create a venv 
-virtualenv venv 
 
-## activate it and install reqs
-source venv/bin/activate
-pip install -r requirements.txt 
-python -m spacy download en_core_web_sm
+## Installation and Setup
 
-## run app file
-python app.py
+1. **Create a virtual environment:**
+   ```bash
+   virtualenv venv
+
+2. **Activate it and install requirements:**
+   ```bash
+   source venv/bin/activate
+   pip install -r requirements.txt
+   python -m spacy download en_core_web_sm
+
+3. **Run app file:**
+   ```bash
+   python app.py
 
 
-Medical DataSet available !!
----- 
+
